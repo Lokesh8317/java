@@ -1,0 +1,32 @@
+package com.learn.basics;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) 
+	{
+	  Scanner input = new Scanner(System.in);
+	  int x=input.nextInt();
+	  int y=input.nextInt();
+	  
+	  if(x==0 && y==0)
+		  System.out.println("origin");
+	  else if(x>0)
+	  {
+		  if(y>0)
+			  System.out.println("first");
+		  else
+			  System.out.println("four");
+	  }
+	  else 
+	  {
+		  if(y>0)
+			  System.out.println("second");
+			  else
+				  System.out.println("third");
+	  }
+
+	}
+
+}
