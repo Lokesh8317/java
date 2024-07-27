@@ -1,0 +1,16 @@
+package com.learn.basics;
+import java.util.*;
+public class Forloop {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int i=1;
+		for(i=1;i<5;i++)
+		{
+			System.out.println("hii");
+		}
+		System.out.println(i);
+
+	}
+
+}
