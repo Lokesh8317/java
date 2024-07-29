@@ -1,0 +1,28 @@
+package com.learn.basics;
+import java.util.*;
+public class sum_of_digits {
+
+	public static void main(String[] args) {
+    Scanner s=new Scanner(System.in);
+    long n=s.nextLong();
+    long rem=0;
+    int odd=0;
+    int even=0;
+    while(n!=0)
+    {	
+    	rem=n%10;
+    	n/=10;
+    	
+    	if(rem%2==0)
+    	{
+    		even++;
+    	}
+    	else
+    	{       
+    		odd++;
+    	}
+    }
+    System.out.println("odd count is"+odd+"even count is"+even);
+	}
+
+}
