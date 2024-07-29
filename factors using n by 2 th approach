@@ -1,0 +1,21 @@
+package com.learn.basics;
+import java.util.*;
+public class factors {
+
+	public static void main(String[] args) 
+	{
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int max=0;
+		int i;
+		for(i=n/2;i>0;i--)
+		{
+			if(n % i==0)
+			{
+				max=i;
+				break;
+			}
+		}
+			System.out.println(max);
+	}
+}
