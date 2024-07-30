@@ -1,0 +1,23 @@
+package com.learn.basics;
+import java.util.*;
+public class arrays {
+
+	public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+    int n=s.nextInt();
+    int i;
+    int arr[]=new int[n];
+    for(i=0;i<n;arr[i++]=s.nextInt());
+    int max=Integer.MIN_VALUE;
+    int min=Integer.MAX_VALUE;
+    for(i=0;i<n;i++)
+    {
+    	if(arr[i]>max)
+    		max=arr[i];
+    	if(arr[i]<min)
+    		min=arr[i];
+    }
+            System.out.println("max"+max);
+            System.out.println("min"+min);
+	}
+}
