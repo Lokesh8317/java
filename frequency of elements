@@ -1,0 +1,36 @@
+package com.learn.basics;
+import java.util.*;
+public class frequency_of_elements {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+        int n,i,j,caount;
+        System.out.println("enter the size of array:");
+        n=s.nextInt();
+        System.out.println("elements of the array:");
+        int a[]=new int[n];
+        for(i=0;i<n;i++)
+        {
+        	a[i]=s.nextInt();
+        }
+          
+        for(i=0;i<n;i++)
+        {
+        	count=1;
+        	if(a[i]!=-1)
+        	{
+        	for(j=i+1;j<n;j++)
+        	{
+        		if(a[i]==a[j])
+        		{
+        			count++;
+        			a[j]=-1;
+        		}
+        		
+        	}
+        	System.out.println(" frequencu : "+a[i]+" is "+count);
+        }
+	}
+
+}
+}
