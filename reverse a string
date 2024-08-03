@@ -1,0 +1,18 @@
+package com.learn.basics;
+import java.util.*;
+public class reverse_string {
+
+	public static void main(String[] args) {
+		System.out.println("enter the string:");
+		Scanner sc=new Scanner(System.in);
+		 String s=sc.nextLine();
+		 int a=s.length();
+		 System.out.println("reversed string is:");
+	     for(int i=a-1;i>=0;i--)
+	     {
+	    	 char ch=s.charAt(i);
+	    	 System.out.print(ch);
+	     }
+	}
+
+}
