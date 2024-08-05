@@ -1,0 +1,43 @@
+package com.learn.basics;
+import java.util.*;
+public class Amstrong_methods {
+    public static int countOfDigit(int n)
+    {
+        int count=0;
+        for(;n!=0;n/=10,count++);
+        return count;   
+    }
+    public static boolean isArmstrong(int n,int count)
+    {
+        int temp=n;
+        int sum=0;
+        while(n!=0)
+        {
+            int last=n%10;
+            int x=(int)Math.pow(last,count);
+            sum+=x;
+            n/=10;
+        }
+        return isTrue(temp,sum);
+    }
+    public static boolean isTrue(int temp,int sum)
+    {
+        if(temp==sum)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.print("Enter a number :");
+        int n=s.nextInt();
+        int count=countOfDigit(n);
+        System.out.print(isArmstrong(n, count));
+        s.close();
+    }
+}
