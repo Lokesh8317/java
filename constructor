@@ -1,0 +1,16 @@
+public class Cricket
+{
+  String batsmen;
+  int internationalcenturies;
+  String mahi;
+  public Cricket(String name1,int i,String name2)
+  {
+    batsmen=name1;
+    internationalcenturies=i;
+    mahi=name2;
+  }
+  public static void main(String[] args)
+  {
+    Cricket a1=new Cricket("Dhoni",16,"MSD");
+  }
+}
